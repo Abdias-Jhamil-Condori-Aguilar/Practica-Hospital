@@ -1,21 +1,28 @@
 import java.util.Date;
 
-public class Paciente {
+public class Paciente extends Persona{
     String codPaciente;
-    String nombre;
-    String primerApellido;
-    String segundoApellido;
-    String DNI;
-    Date fechaNacimiento;
     String numeroSeguridadSocial;
 
-    public Paciente(String codPaciente, String nombre, String primerApellido, String segundoApellido, String DNI, Date fechaNacimiento, String numeroSeguridadSocial) {
+    public Paciente(String nombre, String primerApellido, String segundoApellido, String DNI, Date fechaNacimiento, String codPaciente, String numeroSeguridadSocial) {
+        super(nombre, primerApellido, segundoApellido, DNI, fechaNacimiento);
         this.codPaciente = codPaciente;
-        this.nombre = nombre;
-        this.primerApellido = primerApellido;
-        this.segundoApellido = segundoApellido;
-        this.DNI = DNI;
-        this.fechaNacimiento = fechaNacimiento;
+        this.numeroSeguridadSocial = numeroSeguridadSocial;
+    }
+
+    public String getCodPaciente() {
+        return codPaciente;
+    }
+
+    public void setCodPaciente(String codPaciente) {
+        this.codPaciente = codPaciente;
+    }
+
+    public String getNumeroSeguridadSocial() {
+        return numeroSeguridadSocial;
+    }
+
+    public void setNumeroSeguridadSocial(String numeroSeguridadSocial) {
         this.numeroSeguridadSocial = numeroSeguridadSocial;
     }
 }

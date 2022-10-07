@@ -22,4 +22,6 @@ public class Visita{
         this.fechadeSalida = fechadeSalida;
         this.historial = historial;
     }
+
+
 }

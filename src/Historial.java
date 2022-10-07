@@ -6,4 +6,6 @@ public class Historial {
         this.codHistorial = codHistorial;
         this.paciente = paciente;
     }
+
+
 }
